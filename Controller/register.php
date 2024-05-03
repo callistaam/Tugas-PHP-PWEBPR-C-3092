@@ -1,14 +1,14 @@
 <?php
-require_once 'RestoranController.php';
+require_once 'RestoranModel.php';
 
-$userController = new userController();
+$userModel = new userModel();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    $result = $userController->insert($username, $email, $password);
+    $result = $userModel->insert($username, $email, $password);
 }
 
 else {

@@ -1,8 +1,8 @@
 <?php
-require_once("../Controller/userController.php");
-require_once("../Helper/connection.php");
+require_once("../Model/RestoranModel.php");
+require_once("../Helper/database.php");
 
-$userController = new userController();
+$userModel = new userModel();
 $error = array();
 
 if(isset($_POST['submit'])) {
@@ -20,7 +20,7 @@ if(isset($_POST['submit'])) {
         if($result->num_rows > 0) {
             $error[] = "Username already exist!";
         } else {
-            if($userController->insert($username, $email, $password)) {
+            if($userModel->insert($username, $email, $password)) {
                 header("Location: Dashboard.php");
                 exit;
             } else {

@@ -1,5 +1,5 @@
-<?php
-require_once("../Helper/connection.php");
+<!-- <?php
+require_once("../Helper/database.php");
 
 session_start();
 
@@ -29,7 +29,7 @@ if(isset($_POST['submit'])) {
         $error[] = "Invalid username or password";
     }
 }
-?>
+?> -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -50,6 +50,7 @@ if(isset($_POST['submit'])) {
         
         <div class="box2">
             <div class="title-kanan">LOG IN</div>
+            
             <?php
             if(!empty($error)){
                 foreach($error as $errMsg){
@@ -57,6 +58,7 @@ if(isset($_POST['submit'])) {
                 }
             }
             ?>
+
             <form action="LoginPage.php" method="POST">
                 <div class="form">
                     <label class="username">Username:</label>

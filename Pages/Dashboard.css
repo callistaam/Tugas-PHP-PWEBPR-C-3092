@@ -31,7 +31,7 @@
     flex-direction: column; 
     justify-content: flex-start; 
     align-items: center;
-    z-index: 1;
+    z-index: 2;
 }
 
 .sidebar-box {
@@ -95,7 +95,7 @@ button:hover {
     align-items: center;
     padding-left: 228px;
     position: fixed;
-    z-index: 0;
+    z-index: 1;
     /* margin-left: 135px; */
 }
 
@@ -119,6 +119,10 @@ h1{
     position: relative;
     color: #B0B0B0;
     background-color: transparent;
+}
+
+.form {
+    z-index: 0;
 }
 
 .search-icon {
