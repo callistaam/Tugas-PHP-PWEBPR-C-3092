@@ -63,7 +63,7 @@
                     <a href="/tugas2/Restoranupdate/<?= $data[$i]['Kode_Transaksi'] ?>">
                         <button class="btn-edit">Edit</button>  
                     </a>
-                    <a href="/tugas2/deleteresto/<?= $data[$i]['Kode_Transaksi'] ?>">
+                    <a href="/tugas2/deleteresto/<?= $data[$i]['Kode_Transaksi'] ?>" onclick="return confirm('Are you sure you want to delete this item?');">
                         <button class="btn-hapus">Hapus</button>
                     </a>
                 </td>

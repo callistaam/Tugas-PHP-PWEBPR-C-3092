@@ -46,6 +46,6 @@ class RestoranController {
     public function delete($id) {
         global $url;
         $data = RestoranModel::delete($id);
-        header("Location:".$url."/Dashboard");
+        header("Location:/tugas2");
     }
 }
